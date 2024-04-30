@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wiki:punkto</title>
+  </head>
+  <body>
+    <main>
+
+    </main>
+
+    <script>
+      const container = document.querySelector("main");
+
+      function open(page) {
+        fetch(`/${page}`).then(async (response) => {
+          const section = document.createElement("section");
+          section.innerHTML = wikiLinks(await response.text());
+          container.appendChild(section);
+        })
+      }
+
+      function addSection(content) {
+        
+      }
+
+      function wikiLinks(HTML) {
+        HTML.replace(/\[\[([^\]]+)\]\]/g, '<a href="javascript:open">$1</a>');
+      }
+    </script>
+  </body>
+</html>
