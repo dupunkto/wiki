@@ -2,30 +2,98 @@
 <html>
   <head>
     <title>Wiki:punkto</title>
+
+    <style>
+      @import url("https://geheimesite.nl/base.css");
+
+      section {
+        width: 500px;
+        margin: 15px;
+        padding: 45px 35px;
+        word-wrap: break-word;
+        box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        background: white;
+      }
+
+      section :first-child {
+        margin-top: 0;
+      }
+
+      section :last-child {
+        margin-bottom: 0;
+      }
+    </style>
   </head>
   <body>
     <main>
-
+      <noscript>
+        I'm afraid this monstrosity required JavaScript to function. Sorry!
+      </noscript>
     </main>
 
-    <script>
+    <script type="module">
+      import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
       const container = document.querySelector("main");
 
-      function open(page) {
-        fetch(`/${page}`).then(async (response) => {
+      // This tracks the mouse position. Needed because JavaScript sucks
+      // and doesn't allow me to read the mouse position at an arbitrary
+      // point in the code :(
+
+      let mouseX = 0;
+      let mouseY = 0;
+
+      document.addEventListener("mousemove", (event) => {
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+      });
+
+      // The fun stuff is down here (as always ;)
+
+      function openPage(page, x, y) {
+        fetch(`/${page}.md`).then(async (response) => {
           const section = document.createElement("section");
-          section.innerHTML = wikiLinks(await response.text());
+
+          section.innerHTML = markedUp(await response.text());
+          section.style.top = y + "px";
+          section.style.left = x + "px";
+          section.onclick = (event) => {
+            if (event.shiftKey) section.remove();
+          };
+
+          history.pushState({}, "", `/${page}`);
           container.appendChild(section);
-        })
+        });
       }
 
-      function addSection(content) {
-        
+      function markedUp(markdown) {
+        return marked.parse(wikiLinks(markdown));
       }
 
-      function wikiLinks(HTML) {
-        HTML.replace(/\[\[([^\]]+)\]\]/g, '<a href="javascript:open">$1</a>');
+      function wikiLinks(markdown) {
+        return markdown.replace(
+          /\[\[([^\]]+)\]\]/g,
+          '<a href="$1" onclick="clickLink(event)">$1</a>'
+        );
       }
+
+      function clickLink(event) {
+        event.preventDefault();
+        const page = event.target.innerText;
+        if (event.ctrlKey || event.metaKey) {
+          window.open(`/${page}`);
+        } else {
+          openPage(page, mouseX, mouseY);
+        }
+      }
+
+      window.clickLink = clickLink;
+      window.openPage = openPage;
+
+      let requestedDocument = window.location.pathname.replace(/^\/+/g, "");
+      if (requestedDocument == "") requestedDocument = "MainPage";
+
+      openPage(requestedDocument);
     </script>
   </body>
 </html>
