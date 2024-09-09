@@ -16,6 +16,12 @@
         background: light-dark(white, #2b2b33);
       }
 
+      [data-page="404"] {
+        color: gray;
+        font-style: italic;
+        padding: 20px 30px;
+      }
+
       section :first-child {
         margin-top: 0;
       }
@@ -54,14 +60,21 @@
         fetch(`/${page}.md`).then(async (response) => {
           const section = document.createElement("section");
 
-          section.innerHTML = markedUp(await response.text());
           section.style.top = y + "px";
           section.style.left = x + "px";
           section.onclick = (event) => {
             if (event.shiftKey) section.remove();
           };
 
-          history.pushState({}, "", `/${page}`);
+          if (response.ok) {
+            section.innerHTML = markedUp(await response.text());
+            section.setAttribute("data-page", page);
+            history.pushState({}, "", `/${page}`);
+          } else {
+            section.innerHTML = "<p>This page doesn't exist (yet)</p>";
+            section.setAttribute("data-page", "404");
+          }
+
           container.appendChild(section);
         });
       }

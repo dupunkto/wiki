@@ -1,4 +1,4 @@
-The [[IndieWeb]] is a movement of independent sites that interact with each other via open standards and APIs like [[Webmention]], [[microformats]], and [[ActivityPub]].
+The _IndieWeb_ is a movement of independent sites that interact with each other via open standards and APIs like [[Webmention]], [[microformats]], and [[ActivityPub]].
 
 It originated with a dissatisfaction with big social media platforms and the desire to own your content.
 
