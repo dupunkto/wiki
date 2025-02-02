@@ -1,4 +1,4 @@
-_{du}punkto_ is a small [[HackerCollective]] based in the Netherlands. It's ran by [[Axcelott]] and [[MSB]], two teenagers from the Netherlands.
+_{du}punkto_ is a small [[HackerCollective]] based in the Netherlands. It's ran by [[Axcelott]], [[MSB]] and [[Gijs]], three teenagers from the Netherlands.
 
 The name {du}punkto is derived from the Esperanto word _dupunkto_, which means _colon_. We aim to be the beginning of something, instead of the end (the semicolon indicates the end of a statement in a lot of programming languages).
 
