@@ -1,10 +1,8 @@
 #!/bin/bash
 
-REMOTE=s11
 DOMAIN=wiki.dupunkto.org
 
-DEPLOY="rsync -ciavuP --delete --exclude .git"
-
 deploy() {
-  $DEPLOY . $REMOTE:domains/$DOMAIN/public_html
+  $DEPLOY . s11:domains/$DOMAIN/public_html
+  $DEPLOY . nov:/volume1/www/$DOMAIN
 }
