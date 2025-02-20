@@ -1,4 +1,4 @@
-In [[FreeBSD]], jails are containerised, sandboxed environments for running software, comparable with chroots on steriods.
+In [[FreeBSD]], *jails* are containerised, sandboxed environments for running software, comparable with chroots on steriods.
 
 ## Setup
 

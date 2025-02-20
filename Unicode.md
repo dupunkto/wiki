@@ -1,3 +1,5 @@
-_Unicode_ is a character set that has support for every language on earth.
+_Unicode_ is an international standard for encoding every character from every language on earth. Every character in Unicode has a name (commonly written in capitals) and a number (usually in hexadecimal and usually preceded by *U+*), such as `LEFT CURLY BRACKET` and `U+007B` for the character `{`.
 
-It's really cool.
+Unicode provides encoding for many different types of characters and symbols, such as `⍼` (`U+237C`), `◈` (`U+25C8`) or `⎃` (`U+2383`).
+
+It's a really cool standard.
