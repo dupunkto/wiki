@@ -4,4 +4,5 @@ See also:
 
 - [[WebSite]]
 - [[SmallWeb]]
+- [[IndieWeb]]
 - [[CorporateWeb]]

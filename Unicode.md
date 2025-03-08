@@ -2,4 +2,6 @@ _Unicode_ is an international standard for encoding every character from every l
 
 Unicode provides encoding for many different types of characters and symbols, such as `⍼` (`U+237C`), `◈` (`U+25C8`) or `⎃` (`U+2383`).
 
+Not all fonts render the Unicode characters in a same way (that's kinda the point of a font), and some render them in a very weird way such as [[Wingdings]].
+
 It's a really cool standard.
