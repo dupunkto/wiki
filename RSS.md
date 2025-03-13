@@ -1,6 +1,6 @@
 Nearly every blog has a feature called <dfn>syndication</dfn>. This is a way to to easily subscribe to a site. It works like this: the site exposes a feed, which is a simple text file that contains the latest content in a form that a newsreader app can understand. Your newsreader then periodically checks the feed and shows updates of all sites that you follow in reverse-chronological order.
 
-The technology to make this work is called <abbr title="Really Simple Syndication">RSS</abbr>, and thus these feeds are often called RSS feeds. There’s also another very similar format called Atom. Virtually all newsreaders work equally with both.
+The technology to make this work is called <abbr title="Really Simple Syndication">RSS</abbr>, and thus these feeds are often called RSS feeds. There’s also another very similar format called Atom. Both of these formats use [[XML]], a simple and structured way to format data that computers can read. Virtually all newsreaders work equally with both.
 
 ## But why?
 
