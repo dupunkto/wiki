@@ -1,4 +1,4 @@
-<dfn>Flask</dfn> is a lightweight [[Web]] framework, written in [[Python]].
+<dfn>Flask</dfn> is a lightweight framework for building software for [[TheWeb]], written in [[Python]].
 
 A basic Flask application can look something like this:
 
