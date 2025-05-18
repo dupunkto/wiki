@@ -1,6 +1,4 @@
-_Latex_ is a format for writing mathematical formulas, and in some cases, entire scientific papers. It serves a similar role as [[HTML]], but I primarily use it to put formulas in my [[markdown]] files.
+<dfn>Latex</dfn> is a format for writing mathematical formulas, and in some cases, entire scientific papers.
+It can be used as a markup language similar to [[HTML]], but is also commonly used to include mathmatical formulas in [[MarkDown]] files.
 
-## Lagrida
-
-This is a nice editor that I use:
-https://latexeditor.lagrida.com
+[Lagrida](https://latexeditor.lagrida.com) is a very formula good editor for use in [[MathJax]].

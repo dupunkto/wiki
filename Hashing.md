@@ -1,4 +1,4 @@
-_Hashing_ is a way to create a signature of some input.
+<dfn>Hashing</dfn> is a way to create a signature of some input.
 
 Basically it works like this: you have some input (forexample the number 3) and it gets ran thru a big ass function that produces some weird output (`1121cfccd5913f0a63fec40a6ffd44ea64f9dc135c66634ba001d10bcf4302a2` in this case). You cannot get the original input from the output, but if you put the same input into the function again, it will produce the same output.
 

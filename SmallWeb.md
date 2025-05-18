@@ -1,4 +1,4 @@
-The _Small Web_ is the opposite of the [[CorporateWeb]]. It's an umbrella term for all small websites, ran by individual people out of passion, as opposed to making money, which is the goal of most sites these days.
+The <dfn>Small Web</dfn> is the opposite of the [[CorporateWeb]]. It's an umbrella term for all small websites, ran by individual people out of passion, as opposed to making money, which is the goal of most sites these days.
 
 As far as I know, the term was first coined by Parimal Satyal in his article [Rediscovering the Small Web](https://neustadt.fr/essays/the-small-web/):
 
