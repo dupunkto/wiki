@@ -1,7 +1,9 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Wiki:punkto</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki:dupunkto</title>
 
     <style>
       @import url("https://geheimesite.nl/base.css");
@@ -70,9 +72,11 @@
             section.innerHTML = markedUp(await response.text());
             section.setAttribute("data-page", page);
             history.pushState({}, "", `/${page}`);
+            document.title = `Wiki:${page}`;
           } else {
             section.innerHTML = "<p>This page doesn't exist (yet)</p>";
             section.setAttribute("data-page", "404");
+            document.title = "Wiki:404";
           }
 
           container.appendChild(section);
