@@ -39,6 +39,5 @@ Here are some starting points:
 
 - [ooh.directory](//ooh.directory)
 - [blogroll.org](//blogroll.org)
-- [My blogroll](/blogroll)
 
 In addition to most blogs, lots of other sites also offer RSS feeds. Forexample, every YouTube channel has an RSS feed (try it: simply enter the channel URL in your RSS reader!). And most news sites (like [NOS](//nos.nl/feeds)) offer RSS feeds too, as do [weather forecasts](//rss.buienradar.nl/radar.php). Additionally, RSS is often used for podcasts too.
