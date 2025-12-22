@@ -1,0 +1,4 @@
+name: wiki.dupunkto.org
+type: static
+host: nov
+src: .

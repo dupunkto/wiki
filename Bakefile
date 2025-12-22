@@ -1,8 +1,0 @@
-#!/bin/bash
-
-DOMAIN=wiki.dupunkto.org
-
-deploy() {
-  $DEPLOY . s11:domains/$DOMAIN/public_html
-  $DEPLOY . nov:/volume1/www/$DOMAIN
-}
