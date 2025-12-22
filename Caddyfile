@@ -1,0 +1,11 @@
+@wiki host wiki.dupunkto.org
+
+handle @wiki {
+	@notmd {
+		not {
+			path *.md
+		}
+	}
+
+	rewrite @notmd /index.html
+}
