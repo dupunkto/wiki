@@ -1,4 +1,4 @@
-<dfn>Cascading StyleSheets</dfn> is a declarive language for styling [[HTML]] documents, but it is also commonly used in other, often XML-based, environments, such as [[Gtk]]. CSS describes how diffrent elements in the HTML should be displayed.
+<dfn>Cascading StyleSheets</dfn> is a declarative language for styling [[HTML]] documents, but it is also commonly used in other, often XML-based, environments, such as [[Gtk]]. CSS describes how different elements in the HTML should be displayed.
 
 CSS is made up of different rulesets, each containing one or more selectors and a declaration block.
 
