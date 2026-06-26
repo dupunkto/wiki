@@ -17,6 +17,6 @@ In the past, when you signed up for a website, your password was stored in their
 Combined with the fact that people reuse passwords often, I think you can see the problem.
 The solution? Use a hash.
 
-Instead of storing the password, you store its hash. When the user tries to log in, you compute the hash of the entered password, by running it thru the has algorithm, and if the output matches the stored hash in the database, the password was correct!
+Instead of storing the password, you store its hash. When the user tries to log in, you compute the hash of the entered password, by running it thru the hash algorithm, and if the output matches the stored hash in the database, the password was correct!
 
 Because of this, sites don't literally have your password anymore. That's why they don't email you your password if you click the "Password forgotten" button.
