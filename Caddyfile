@@ -7,5 +7,5 @@ handle @wiki {
 		}
 	}
 
-	rewrite @notmd {host}/index.html
+	rewrite @notmd /index.html
 }
