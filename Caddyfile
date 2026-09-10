@@ -1,11 +1,10 @@
-@wiki host wiki.dupunkto.org
+@wiki {
+	host wiki.dupunkto.org
+	not path *.md
+}
 
 handle @wiki {
-	@notmd {
-		not {
-			path *.md
-		}
-	}
-
-	rewrite @notmd /index.html
+	root * /var/www/html/{host}
+	rewrite * /index.html
+	file_server
 }
