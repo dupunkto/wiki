@@ -1,4 +1,4 @@
 name: wiki.dupunkto.org
 type: static
-host: nov
+runner: nov
 src: .
